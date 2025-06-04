@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameover"
+    tools:context=".ScoreActivity">
+
+    <LinearLayout
+        android:id="@+id/score_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/score_LBL_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💀 END GAME"
+            android:textSize="@dimen/status_size"
+            android:textColor="@android:color/white"
+            android:gravity="center" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/score_LBL_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asteroid Passed: 0"
+            android:textSize="@dimen/name_size"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/score_LBL_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance: 0"
+            android:textSize="@dimen/name_size"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/score_LBL_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coins: 0"
+            android:textSize="@dimen/name_size"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/score_BTN_backToMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Menu"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</RelativeLayout>

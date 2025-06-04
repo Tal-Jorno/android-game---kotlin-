@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/start_screen"
+    tools:context=".MenuActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Game (Buttons)"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Game (Sensor)"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        style="@style/Widget.MaterialComponents.Button" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_BTN_highscores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HIGH SCORES"
+        android:layout_marginTop="12dp" />
+
+
+</LinearLayout>
